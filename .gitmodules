@@ -1,0 +1,3 @@
+[submodule "AWTLibrary"]
+	path = AWTLibrary
+	url = https://sambow@bitbucket.org/awt2017/android-library.git

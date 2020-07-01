@@ -1,0 +1,6 @@
+include ':Lib-Base'
+include ':Lib-Network'
+include ':app'
+project(':Lib-Network').projectDir = new File(rootDir, 'AWTLibrary/Lib-Network/')
+project(':Lib-Base').projectDir = new File(rootDir, 'AWTLibrary/Lib-Base/')
+rootProject.name = "MigoTest"
