@@ -1,6 +1,9 @@
 package com.example.migotest
 
-import com.appwellteam.library.AWTApplication
+import com.appwellteam.library.fragment.FragmentApplication
 
-class MainApplication: AWTApplication() {
+class MainApplication: FragmentApplication() {
+    override fun showLeaveDialog() {
+
+    }
 }

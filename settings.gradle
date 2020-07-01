@@ -1,6 +1,10 @@
+include ':Lib-Fragment'
+include ':Lib-Control'
 include ':Lib-Base'
 include ':Lib-Network'
 include ':app'
 project(':Lib-Network').projectDir = new File(rootDir, 'AWTLibrary/Lib-Network/')
 project(':Lib-Base').projectDir = new File(rootDir, 'AWTLibrary/Lib-Base/')
+project(':Lib-Control').projectDir = new File(rootDir, 'AWTLibrary/Lib-Control/')
+project(':Lib-Fragment').projectDir = new File(rootDir, 'AWTLibrary/Lib-Fragment/')
 rootProject.name = "MigoTest"
