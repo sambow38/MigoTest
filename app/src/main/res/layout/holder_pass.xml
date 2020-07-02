@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginStart="@dimen/dp_12"
+        android:textSize="@dimen/dp_16"
+        android:textColor="@color/black"
+        android:text="PASS Card"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/created_at"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_below="@id/name"
+        android:textSize="@dimen/dp_16"
+        android:textColor="@color/black"
+        android:text="Created at"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/serial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_below="@id/created_at"
+        android:layout_toStartOf="@id/active"
+        android:textSize="@dimen/dp_16"
+        android:textColor="@color/black"
+        android:text="Serial number"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_below="@id/serial"
+        android:textSize="@dimen/dp_16"
+        android:textColor="@color/black"
+        android:text="Status"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/status_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_below="@id/serial"
+        android:layout_toEndOf="@id/status"
+        android:textSize="@dimen/dp_16"
+        android:textColor="@color/black"
+        android:text="Status period"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/dp_16"
+        android:textColor="@color/btn_text_blue"
+        android:text="Activate"
+        android:background="@drawable/awt_selector_white"/>
+
+</RelativeLayout>
