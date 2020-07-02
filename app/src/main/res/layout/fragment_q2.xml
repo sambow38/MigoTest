@@ -5,37 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="@dimen/dp_60"-->
-<!--        android:orientation="horizontal">-->
-<!--        <androidx.appcompat.widget.AppCompatTextView-->
-<!--            android:layout_width="0px"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_weight="1"-->
-<!--            android:gravity="center_vertical"-->
-<!--            android:textSize="@dimen/dp_20"-->
-<!--            android:text="Period："/>-->
-<!--        <androidx.appcompat.widget.AppCompatEditText-->
-<!--            android:layout_width="0px"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_weight="1"-->
-<!--            android:gravity="center_vertical"-->
-<!--            android:textSize="@dimen/dp_20"-->
-<!--            android:maxLength="2"-->
-<!--            android:inputType="number"/>-->
-<!--        <androidx.appcompat.widget.AppCompatButton-->
-<!--            android:layout_width="0px"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_weight="1.2"-->
-<!--            android:text="Day"/>-->
-<!--        <androidx.appcompat.widget.AppCompatButton-->
-<!--            android:layout_width="0px"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_weight="1"-->
-<!--            android:text="Create"/>-->
-<!--    </LinearLayout>-->
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/create"
         android:layout_width="match_parent"

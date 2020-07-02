@@ -1,7 +1,9 @@
 package com.example.migotest.fragment
 
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
+import android.view.LayoutInflater
 import android.view.View
 import androidx.appcompat.widget.AppCompatButton
 import com.appwellteam.library.fragment.BaseFragment
@@ -23,6 +25,7 @@ class MainFragment: BaseFragment() {
     }
 
     override fun initialize(view: View, savedInstanceState: Bundle?) {
+        view.setBackgroundColor(Color.WHITE)
         btnQuestion1.setOnClickListener {
             changePage(0)
         }
@@ -30,6 +33,10 @@ class MainFragment: BaseFragment() {
             changePage(1)
         }
         changePage(0)
+    }
+
+    override fun getTitle(inflater: LayoutInflater): View? {
+        return null
     }
 
     private fun changePage(index: Int)

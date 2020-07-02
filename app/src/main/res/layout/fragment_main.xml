@@ -12,7 +12,6 @@
             android:layout_height="@dimen/dp_60"
             android:orientation="horizontal">
 
-
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_q1"
                 android:layout_width="0px"

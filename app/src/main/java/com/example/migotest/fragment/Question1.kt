@@ -28,7 +28,6 @@ class Question1: BaseFragment() {
     }
 
     override fun initialize(view: View, savedInstanceState: Bundle?) {
-        view.setBackgroundColor(Color.BLUE)
         btnWifi.setOnClickListener {
             AWTCommon.showToast(String.format("isConnected: %s\nisWifi: %s", AWTWebCommon.isNetworkConnect, AWTWebCommon.isWifiConnect))
         }

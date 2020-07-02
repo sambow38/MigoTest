@@ -10,7 +10,7 @@ import com.appwellteam.library.common.AWTCommon
 import com.appwellteam.library.dialog.AWTPopup
 import com.example.migotest.R
 
-class PassPopup(private val callback: OnPassCreated) : AWTPopup<Any>() {
+class PassPopup(private val callback: OnPassCreated? = null) : AWTPopup<Any>() {
     interface OnPassCreated
     {
         fun onCreated(isDay: Boolean, number: Int)
@@ -20,9 +20,6 @@ class PassPopup(private val callback: OnPassCreated) : AWTPopup<Any>() {
     private lateinit var radioDay: AppCompatRadioButton
     private lateinit var radioHour: AppCompatRadioButton
     private lateinit var editText: AppCompatEditText
-    private lateinit var btnOK: AppCompatButton
-    private lateinit var btnCancel: AppCompatButton
-//    private var currentSelectRes: Int? = null
 
     private val isDataComplete: Boolean
         get() {
@@ -48,23 +45,14 @@ class PassPopup(private val callback: OnPassCreated) : AWTPopup<Any>() {
     override fun initView(view: View, anyObject: Any?) {
         radioGroup = view.findViewById(R.id.radio)
         editText = view.findViewById(R.id.edt)
-        btnOK = view.findViewById(R.id.ok)
-        btnCancel = view.findViewById(R.id.cancel)
         radioDay = view.findViewById(R.id.radio_btn_day)
         radioHour = view.findViewById(R.id.radio_btn_hour)
         radioGroup.check(radioDay.id)
-//        radioGroup.setOnCheckedChangeListener { _, i -> currentSelectRes = i }
 
-        btnOK.setOnClickListener {
+        view.findViewById<AppCompatButton>(R.id.ok).setOnClickListener {
             if (isDataComplete)
             {
-//                val scale = when (radioGroup.checkedRadioButtonId) {
-//                    R.id.radio_hour -> 60 * 60
-//                    R.id.radio_day -> 60 * 60 * 24
-//                    else -> 0
-//                }
-//                val number = editText.text.toString().toInt()
-                callback.onCreated(radioGroup.checkedRadioButtonId == radioDay.id, editText.text.toString().toInt())
+                callback?.onCreated(radioGroup.checkedRadioButtonId == radioDay.id, editText.text.toString().toInt())
                 dismiss()
             }
             else
@@ -73,7 +61,7 @@ class PassPopup(private val callback: OnPassCreated) : AWTPopup<Any>() {
             }
         }
 
-        btnCancel.setOnClickListener {
+        view.findViewById<AppCompatButton>(R.id.cancel).setOnClickListener {
             dismiss()
         }
     }

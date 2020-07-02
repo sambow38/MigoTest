@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sys_popup_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/dp_40"
+        android:background="@drawable/shape_rounded_white"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_20">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PASS Card"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_20" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_20" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/serial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Serial"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_20" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_20" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/start_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start - End"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_20" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/awt_selector_white"
+                android:text="Close"
+                android:textColor="@color/btn_text_blue"
+                android:textSize="@dimen/dp_16" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/awt_selector_white"
+                android:text="Activate"
+                android:textColor="@color/btn_text_blue"
+                android:textSize="@dimen/dp_16" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
