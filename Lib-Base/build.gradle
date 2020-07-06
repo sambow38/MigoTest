@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api group: 'de.greenrobot', name: 'eventbus', version: '2.4.0'
+//    implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibraryVersion}"
+//    api 'com.android.support:multidex:1.0.3'
+    api 'androidx.exifinterface:exifinterface:1.1.0'
+    api 'androidx.appcompat:appcompat:1.1.0'
+    api 'androidx.appcompat:appcompat-resources:1.1.0'
+    api 'androidx.multidex:multidex:2.0.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
+}

@@ -4,9 +4,9 @@ include ':Lib-Control'
 include ':Lib-Base'
 include ':Lib-Network'
 include ':app'
-project(':Lib-Network').projectDir = new File(rootDir, 'AWTLibrary/Lib-Network/')
-project(':Lib-Base').projectDir = new File(rootDir, 'AWTLibrary/Lib-Base/')
-project(':Lib-Control').projectDir = new File(rootDir, 'AWTLibrary/Lib-Control/')
-project(':Lib-Fragment').projectDir = new File(rootDir, 'AWTLibrary/Lib-Fragment/')
-project(':Lib-Dialog').projectDir = new File(rootDir, 'AWTLibrary/Lib-Dialog/')
+project(':Lib-Network').projectDir = new File(rootDir, 'Lib-Network/')
+project(':Lib-Base').projectDir = new File(rootDir, 'Lib-Base/')
+project(':Lib-Control').projectDir = new File(rootDir, 'Lib-Control/')
+project(':Lib-Fragment').projectDir = new File(rootDir, 'Lib-Fragment/')
+project(':Lib-Dialog').projectDir = new File(rootDir, 'Lib-Dialog/')
 rootProject.name = "MigoTest"

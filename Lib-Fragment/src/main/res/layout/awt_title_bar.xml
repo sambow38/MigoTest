@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sys_title_bar_bg">
+
+    <ImageView
+        android:id="@+id/title_bar_img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"/>
+
+    <TextView
+        android:id="@+id/title_bar_tv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignTop="@id/title_bar_img_bg"
+        android:layout_alignBottom="@id/title_bar_img_bg"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/dp_10"
+        android:gravity="center"
+        android:textColor="@color/sys_title_color"
+        android:textSize="@dimen/dp_16" />
+
+    <com.appwellteam.library.control.imageView.AutoBgImageView
+        android:id="@+id/title_bar_img_left"
+        android:layout_width="@dimen/title_bar_height"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignTop="@id/title_bar_img_bg"
+        android:layout_alignBottom="@id/title_bar_img_bg"
+        android:scaleType="fitCenter"
+        android:padding="@dimen/dp_10"/>
+
+    <com.appwellteam.library.control.textView.AutoSizeTextView
+        android:id="@+id/title_bar_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignTop="@id/title_bar_img_bg"
+        android:layout_alignBottom="@id/title_bar_img_bg"
+        android:gravity="center"
+        android:maxLines="1"
+        android:layout_marginLeft="@dimen/title_bar_height"
+        android:layout_marginRight="@dimen/title_bar_height"
+        android:textColor="@color/sys_title_color"
+        android:textSize="@dimen/dp_20"
+        android:layout_centerInParent="true" />
+
+    <com.appwellteam.library.control.imageView.AutoBgImageView
+        android:id="@+id/title_bar_img_right"
+        android:layout_width="@dimen/title_bar_height"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignTop="@id/title_bar_img_bg"
+        android:layout_alignBottom="@id/title_bar_img_bg"
+        android:scaleType="fitCenter"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/dp_10" />
+
+    <TextView
+        android:id="@+id/title_bar_tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignTop="@id/title_bar_img_bg"
+        android:layout_alignBottom="@id/title_bar_img_bg"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/dp_10"
+        android:gravity="center"
+        android:textColor="@color/sys_title_color"
+        android:textSize="@dimen/dp_16" />
+
+</RelativeLayout>

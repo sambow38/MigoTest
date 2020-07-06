@@ -1,0 +1,12 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+  
+  <solid android:color="@color/sys_dialog_button_blue_pressed" />
+    
+  <corners
+      android:radius="@dimen/sys_default_btn_corner_radius"
+   />
+  <stroke
+      android:width="@dimen/sys_default_btn_board_width"
+      android:color="@color/sys_dialog_button_blue_pressed" />
+</shape>

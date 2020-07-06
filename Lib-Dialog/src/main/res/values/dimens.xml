@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="popup_round_ratio">@dimen/dp_5</dimen>
+</resources>

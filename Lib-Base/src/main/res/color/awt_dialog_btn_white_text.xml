@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <selector xmlns:android="http://schemas.android.com/apk/res/android">
+     <item android:state_pressed="true"  android:color="@color/sys_dialog_button_blue_normal" /> <!-- pressed -->
+     <item android:state_focused="true"  android:color="@color/sys_dialog_button_blue_normal" /> <!-- focused -->
+     <item android:color="@android:color/white" />						     <!-- default -->
+</selector>

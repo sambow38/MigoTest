@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tab_focus">#007AFF</color>
+    <color name="tab_divider">#666666</color>
+    <color name="navigation_dot">#de3535</color>
+
+    <color name="wheel_value_text_color">#FF3F74CA</color>
+    <color name="wheel_items_text_color">#FFC4C4C4</color>
+</resources>

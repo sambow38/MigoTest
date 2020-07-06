@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_360"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/sys_dialog_title"
+        android:textSize="@dimen/sp_24"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/sv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_30">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|start"
+            android:textColor="@color/sys_dialog_message"
+            android:textSize="@dimen/sp_20"
+            android:lineSpacingMultiplier="1.25"
+            android:maxHeight="@dimen/dp_200"
+            android:scrollbars="vertical" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/dialog_footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</LinearLayout>
